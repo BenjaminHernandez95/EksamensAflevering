@@ -1,0 +1,40 @@
+### Get all trips
+GET http://localhost:8080/trips
+
+### Get trip by ID
+GET http://localhost:8080/trips/1
+
+### Create a new trip
+POST http://localhost:8080/trips
+Content-Type: application/json
+
+{
+  "startTime": "2024-12-01T10:00:00",
+  "endTime": "2024-12-01T16:00:00",
+  "startPosition": "Beach Area",
+  "name": "Beach Adventure",
+  "price": 150.00,
+  "category": "BEACH"
+}
+
+### Update a trip
+PUT http://localhost:8080/trips/4
+Content-Type: application/json
+
+{
+  "startTime": "2024-12-05T09:00:00",
+  "endTime": "2024-12-05T17:00:00",
+  "startPosition": "City Center",
+  "name": "City Exploration",
+  "price": 200.00,
+  "category": "CITY"
+}
+
+### Delete a trip
+DELETE http://localhost:8080/trips/4
+
+### Add a guide to a trip
+PUT http://localhost:8080/trips/1/guides/1
+
+### Populate database
+POST http://localhost:8080/trips/populate
