@@ -133,7 +133,4 @@ Response code: 200 (OK); Time: 6ms (6 ms); Content length: 236 bytes (236 B)
 
 ### 3.3.5
 Using PUT to Assign a Guide to a Trip
-PUT was chosen over POST because we are updating an existing trip by adding a relationship, rather than creating a new resource. PUT is more appropriate for this type of update.
-
-Including Guide Info in GET /trips/{id}
-For convenience, the GET /trips/{id} endpoint includes guide details directly in the trip response if a guide is assigned. This approach helps clients get all relevant trip and guide details in a single request without needing multiple calls.
+PUT was chosen over POST because we are updating an existing trip by adding a relationship, rather than creating a new resource. PUT is better for this type of update.
